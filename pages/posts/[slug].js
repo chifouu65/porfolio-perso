@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { works } from '../../data/index'
+import { posts } from '../../data/index'
 import { useEffect, useState } from 'react'
 import {
     Container,
@@ -16,21 +16,21 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Head from 'next/head'
 
-const Work = () => {
+const Posts = () => {
     const router = useRouter()
     const { slug } = router.query
-    const [work, setWork] = useState(null)
+    const [post, setPost] = useState(null)
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
        if (slug) {
-            const workFind = works.find(work => work.id === slug)
-            if (workFind) {
-                setWork(workFind)
+            const postFind = posts.find(post => post.id === slug)
+            if (postFind) {
+                setPost(postFind)
                 setLoading(false)
             } else {
-                setError('Work not found')
+                setError('Post not found')
                 setLoading(false)
             }
        }
@@ -41,16 +41,16 @@ const Work = () => {
     } else if (error) {
         return  <div>
             <Head>
-                <title>Work not found - Works - Noah Lhote</title>
-                <meta name="og:title" content={`Work not found - Works - Noah Lhote`} />
-                <meta name="og:description" content="Work not found" />
+                <title>Post not found - Noah Lhote</title>
+                <meta name="og:title" content={`Post not found - Noah Lhote`} />
+                <meta name="og:description" content="Post not found" />
             </Head>
-            <Layout title="Work not found">
+            <Layout title="Post not found">
                 <Container>
                     <Title>
-                        Work not found
+                        Post not found
                     </Title>
-                        The work you are looking for does not exist.
+                        The post you are looking for does not exist.
                 </Container>
                 <Divider my={4} />
                 <Container>
@@ -67,65 +67,41 @@ const Work = () => {
         return (
         <>
         <Head>
-            <title>{work.title} - Works - Noah Lhote</title>
-            <meta name="og:title" content={`${work.title} - Works - Noah Lhote`} />
-            <meta name="og:description" content={work.description} />
+            <title>{post.title} - Posts - Noah Lhote</title>
+            <meta name="og:title" content={`${post.title} - Posts - Noah Lhote`} />
+            <meta name="og:description" content={post.description} />
             <meta name="keywords" content={
-                work.stack.map((stack) => {
+                post.tags.map((stack) => {
                     return stack
-                }) + ', ' + work.title
+                }) + ', ' + post.title
             }/>
         </Head>
-        <Layout title={work.title}
+        <Layout title={post.title}
         >
         <Container>
             <Title>
                 {
-                    work.title && work.title + ' ' 
-                }{' - '}
-                {
-                    work.year && <Badge
-                    bg={
-                        useColorModeValue('purple.500', 'orange.200')
-                    }
-                    color={
-                        useColorModeValue('white', 'gray.900')
-                    }
-                    >{work.year}</Badge>
+                    post.title && post.title + ' ' 
                 }
             </Title>
                 {
-                    work.description && work.description
+                    post.description && post.description
                 }
             <List ml={4} my={4}>
-            {
-                work.link && <ListItem>
-                    <Meta>Website</Meta>
-                    <Link
-                        target="_blank"
-                        color={useColorModeValue('purple.500', 'orange.200')}
-                        href={
-                            work.link
-                        }>
-                        {work.link} <ExternalLinkIcon mx="2px" 
-                        />
-                    </Link>
-                </ListItem>
-            }
             <ListItem>
                 <Meta>Platform</Meta>
                 <span>Website</span>
             </ListItem>
             {
-                work.stack && 
+                post.tags && 
                 <ListItem>
                     <Meta>Stack</Meta>
                     <span>
                         {
-                            work.stack.map((stack, index) => {
+                            post.tags.map((stack, index) => {
                                 return <span key={index}>
                                     {
-                                        index === work.stack.length - 1 ? stack : stack + ', '
+                                        index === post.tags.length - 1 ? stack : stack + ', '
                                     }
                                 </span>
                             })
@@ -135,9 +111,9 @@ const Work = () => {
             }
             </List>
             {
-                work.imgs && 
-                    work.imgs.map((img, index) => {
-                        return <WorkImage key={index} src={img.src}/>
+                post.images && 
+                post.images.map((img, index) => {
+                        return <WorkImage key={index} src={img.src.src}/>
                     })
             }
         </Container>
@@ -147,6 +123,6 @@ const Work = () => {
     }
   }
   
-  export default Work
+  export default Posts
   export { getServerSideProps } from '../../components/chakra'
   
