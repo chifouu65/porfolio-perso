@@ -6,15 +6,6 @@ const links = [
       link: 'https://github.com/chifouu65',
       icon: <IoLogoGithub/>,
     },
-    {
-      title: 'Instagram',
-      link: 'https://www.inkdrop.app/',
-      icon: <IoLogoInstagram/>,
-    },{
-      title: 'Twitter',
-      link: 'https://www.inkdrop.app/',
-      icon: <IoLogoTwitter/>,
-    }
   ]
 
   export default links

@@ -10,8 +10,8 @@ import {
     useColorModeValue,
     Button,
     Divider,
+    Text,
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Head from 'next/head'
@@ -79,13 +79,33 @@ const Posts = () => {
         <Layout title={post.title}
         >
         <Container>
+            
             <Title>
                 {
                     post.title && post.title + ' ' 
                 }
             </Title>
                 {
-                    post.description && post.description
+                    post.description.map((desc, index) => {
+                        return ( 
+                            
+                                desc.includes('$$') ?
+                                <Text key={index} as="h2"
+                                    mb={2}
+                                    fontWeight="bold"
+                                    fontSize="2xl"
+                                >
+                                    {
+                                        desc.replace('$$', '')
+                                    }
+                                </Text> :
+                                <Text key={index} mb={2} as="p" fontSize="xl">
+                                    {
+                                        desc
+                                    }
+                                </Text>
+                        )
+                    })
                 }
             <List ml={4} my={4}>
             <ListItem>

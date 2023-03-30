@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge, useColorModeValue } from '@chakra-ui/react'
+import { Heading, Box, Image, Link, Badge, useColorModeValue, Divider } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
 
@@ -19,8 +19,9 @@ export const Title = ({ children }) => {
         </Link>
         <span>
           {' '}
-          <ChevronRightIcon />{' '}
+          <ChevronRightIcon />
         </span>
+        <Divider my={2} />
         <Heading sx={
           {
             display: 'flex',

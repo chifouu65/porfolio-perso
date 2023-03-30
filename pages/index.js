@@ -70,7 +70,7 @@ const About = () => {
   return (
     <Section delay={0.1}>
       <Heading pb={2} as="h3" variant="section-title">
-        About me
+        À propos de moi
       </Heading>
       <Box>
         Je suis 
@@ -96,7 +96,7 @@ const About = () => {
           rightIcon={<ChevronRightIcon />}
           colorScheme={useColorModeValue('purple', 'orange')}
         >
-          My portfolio
+          Mon portfolio
         </Button>
       </Box>
   </Section>
@@ -106,7 +106,7 @@ const Works = () => {
   return (
     <Section delay={0.2}>
     <Heading pb={2} as="h3" variant="section-title">
-      Work
+      Works & Projects
     </Heading>
     {
       works.map((item, index) => (
@@ -137,7 +137,7 @@ const Works = () => {
           variant="outline"
           colorScheme={useColorModeValue('purple', 'orange')}
         >
-          See more
+          Voir plus ...
         </Button>
       </NextLink>
     </Box>
@@ -148,7 +148,7 @@ const Formations = () => {
   return (
     <Section delay={0.3}>
         <Heading as="h3" pb={2} variant="section-title">
-          Formations and Certifications
+          Formations et Certifications
         </Heading>
         {
           formations.map((item, index) => (
@@ -169,7 +169,7 @@ const Links = () => {
   return (
     <Section delay={0.3}>
     <Heading pb={2} as="h3" variant="section-title">
-      My Links and Socials
+      Mes réseaux sociaux
     </Heading>
     <List>
       {
@@ -208,7 +208,7 @@ const Contact = () => {
             rightIcon={<EmailIcon />}
             colorScheme={useColorModeValue('purple', 'orange')}
           >
-            Contact me
+            Me contacter
           </Button>
         </Box>
       </Section>
