@@ -8,6 +8,7 @@ import {
     Button,
     Divider,
     Text,
+    List
 } from '@chakra-ui/react'
 import { Title, WorkImage, Meta } from '../../components/work'
 import Layout from '../../components/layouts/article'
@@ -90,7 +91,10 @@ const Posts = () => {
                                 <Text key={index} as="h2"
                                     mb={2}
                                     fontWeight="bold"
-                                    fontSize="2xl"
+                                    fontSize="xl"
+                                    pl={2}
+                                    bg={useColorModeValue('purple.100', 'orange.100')}
+                                    color={useColorModeValue('purple.500', 'orange.500')}
                                 >
                                     {
                                         desc.replace('$$', '')

@@ -79,6 +79,9 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/" path={path}>
+            Home
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
@@ -87,7 +90,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/chifouu65/porfolio-perso"
+            href="https://github.com/chifouu65/"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -111,8 +114,10 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem
-                as={MenuLink} href="/">
+                <MenuItem as={MenuLink} href="/">
+                  Home
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
@@ -123,7 +128,7 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/chifouu65/porfolio-perso"
+                  href="https://github.com/chifouu65/"
                 >
                   View Source
                 </MenuItem>

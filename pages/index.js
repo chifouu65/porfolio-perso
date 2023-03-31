@@ -175,9 +175,14 @@ const Links = () => {
       {
         links.map((item, index) => (
           <ListItem pb={4} key={index}>
-            <Link href={item.link} target="_blank">
+            <Link 
+              sx={{
+                fontWeight: 'bold',
+              }}
+              color={useColorModeValue('purple.500', 'orange.200')}
+              href={item.link} target="_blank">
               <Button
-              colorScheme={useColorModeValue('purple', 'orange')}
+                colorScheme={useColorModeValue('purple', 'orange')}
                 variant="outline"
                 leftIcon={item.icon}
               >

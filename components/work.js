@@ -28,7 +28,7 @@ export const Title = ({ children }) => {
             alignItems: 'center',
             gap: '0.5rem'
           }
-        } as="h3" fontSize={20} mt={1} mb={4}>
+        } as="h2" fontSize={26} mt={1} mb={4}>
           {children}
         </Heading>
       </Box>

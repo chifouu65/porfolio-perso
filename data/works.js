@@ -16,8 +16,8 @@ import kasa_full_item from '../public/images/works/kasa/kasa-full_item.png'
 import lapanthere_full from '../public/images/works/lapanthere/lapanthere_full.png'
 import lapanthere_phone from '../public/images/works/lapanthere/lapanthere_phone.png'
 
-import booki_full from '../public/images/works/booki/booki_full.png'
-import booki_phone from '../public/images/works/booki/booki_phone.png'
+//import booki_full from '../public/images/works/booki/booki_full.png'
+//import booki_phone from '../public/images/works/booki/booki_phone.png'
 
 import kanap_full from '../public/images/works/kanap/kanap_full.png'
 import kanap_phone from '../public/images/works/kanap/kanap_phone.png'
@@ -27,17 +27,23 @@ const works = [
       id: 'pierrette-essentielle',
       title: 'Pierrette Essentielle',
       link: 'https://www.pierrette-essentielle.com/',
-      description: `Développeur Full Stack pour un site de commerce électronique chez Pierrette Essentielle (Freelance). Création d'un site de commerce électronique, développement d'une API sécurisée à l'aide de Nodejs et d'express pour la gestion des produits et des commandes, et développement du site web client en utilisant React, TailwindCss, Stripe.`,
+      description: `Développeur Full Stack pour un site de e-commerce
+        pour Pierrette Essentielle (Freelance). Développement 
+       d'une API sécurisée à l'aide de Nodejs et d'express pour la
+        gestion des produits et des commandes, et développement du 
+        site web client en utilisant React, TailwindCss, Stripe.`,
       year: '2023',
       thumbnail: pierrette_full_main,
       imgs: [pierrette_full_main, pierrette_full_about, pierrette_phone_item, pierrette_phone_contact],
-      stack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Stripe'],
+      stack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'TailwindCSS'],
     },
     {
       id: 'hot-takes',
       title: 'HotTakes',
       link: 'https://github.com/chifouu65',
-      description: `Développement d'une API sécurisée pour une application de critique gastronomique en utilisant Nodejs, Express, JsonWebToken, Bcrypt et MongoDB.`,
+      description: `Développement d'une API sécurisée pour une 
+      application de critique gastronomique en utilisant Nodejs, 
+      Express, JsonWebToken, Bcrypt et MongoDB. (projet d'étude)`,
       year: '2022',
       thumbnail: hottakes,
       imgs: [hottakes],
@@ -47,51 +53,55 @@ const works = [
       id: 'kasa',
       title: `Kasa`,
       link: `https://github.com/chifouu65/P7_OC`,
-      description: `Développement d'une maquette pour une agence immobilière à l'aide de React et Sass.`,
+      description: `Développement d'une maquette pour une agence immobilière à l'aide de React et Scss.  (projet d'étude)`,
       year: '2022',
       thumbnail: kasa_full_item,
       imgs: [kasa_phone_home, kasa_phone_item, kasa_full_about, kasa_full_item],
-      stack: ['React', 'Sass'],
+      stack: ['React', 'Scss'],
     },
     {
       id: 'la-panthere',
       title: `La Panthère`,
       link: `https://github.com/chifouu65/Projt_4_SEO_NL`,
-      description: `J'ai optimisé un site web existant pour améliorer son référencement et sa performance. J'ai identifié les parties qui n'étaient pas optimisées pour le référencement et/ou n'étaient pas à jour en termes d'accessibilité, et j'ai fourni une liste de recommandations pour améliorer le site en mettant l'accent sur l'impact sur la vitesse de chargement de la page. J'ai ensuite optimisé le contenu et le code source du site en appliquant ces recommandations et j'ai comparé les résultats de performance avant et après l'optimisation.`,
+      description: `J'ai optimisé un site web existant pour améliorer 
+      son référencement et sa performance. 
+      J'ai identifié les parties qui n'étaient pas optimisées 
+      pour le référencement et/ou n'étaient pas à jour en termes 
+      d'accessibilité, et j'ai fourni une liste de recommandations 
+      pour améliorer le site en mettant l'accent sur l'impact sur la 
+      vitesse de chargement de la page. J'ai ensuite optimisé le contenu 
+      et le code source du site en appliquant ces recommandations et j'ai 
+      comparé les résultats de performance avant et après l'optimisation. (projet d'étude)`,
       year: '2022',
       thumbnail: lapanthere_full,
       imgs: [lapanthere_full, lapanthere_phone],
       stack: ['React', 'Sass'],
     },
     {
-      id: 'booki',
-      title: `Booki`,
-      link: 'https://github.com/chifouu65/p2_OC_NL/tree/intégration-web',
-      description: `Création d'une maquette pour une agence immobilière à l'aide de HTML, CSS, Sass et JavaScript.`,
-      year: '2022',
-      thumbnail: booki_full,
-      imgs: [booki_full, booki_phone],
-      stack: ['React', 'Sass'],
-    },
-    {
       id: 'ohmyfood',
       title: `OhMyFood`,
       link: 'https://github.com/chifouu65/p3_OC_NL',
-      description: `Création d'une maquette pour un site web de restaurant en utilisant HTML, CSS et JavaScript.`,
+      description: `
+      Développement d'un site web pour une entreprise de commande de repas en ligne.
+      Le concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte. (projet d'étude)`,
       year: '2022',
       thumbnail: omf_full,
       imgs: [omf_full, omf_phone_item],
-      stack: ['React', 'Sass'],
+      stack: ['Javascript', 'Sass', 'Html'],
     },
     {
       id: 'kanap',
       title: `Kanap`,
       link: 'https://github.com/chifouu65/P5-Dev-Web-Kanap',
-      description: `Création d'une maquette pour un site web de meubles en utilisant HTML, CSS, Sass et JavaScript.`,
+      description: `
+      Développement d'un site e-commerce pour une marque de canapés. 
+      Le site permet aux utilisateurs de consulter les produits,
+      de les ajouter au panier et de passer commande. (projet d'étude)
+      `,
       year: '2022',
       thumbnail: kanap_full,
       imgs: [kanap_full, kanap_phone],
-      stack: ['React', 'Sass'],
+      stack: ['Javascript', 'Css', 'Nodejs', 'Express', 'MongoDB'],
     }
   ]
 
