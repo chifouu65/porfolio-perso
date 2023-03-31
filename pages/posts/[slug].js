@@ -3,9 +3,6 @@ import { posts } from '../../data/index'
 import { useEffect, useState } from 'react'
 import {
     Container,
-    Badge,
-    Link,
-    List,
     ListItem,
     useColorModeValue,
     Button,

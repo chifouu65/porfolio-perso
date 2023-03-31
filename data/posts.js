@@ -1,4 +1,3 @@
-import hottakes from '../public/images/works/hottakes/rest.png'
 import top10 from '../public/images/posts/1651013899dMCV5xKEWj.jpeg'
 
 const posts = [
