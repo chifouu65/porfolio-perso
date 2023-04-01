@@ -40,7 +40,7 @@ const works = [
     {
       id: 'hot-takes',
       title: 'HotTakes',
-      link: 'https://github.com/chifouu65',
+      link: 'https://github.com/chifouu65/REST-API-Node_Express_Mongo',
       description: `Développement d'une API sécurisée pour une 
       application de critique gastronomique. (projet d'étude)`,
       year: '2022',
