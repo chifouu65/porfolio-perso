@@ -27,33 +27,34 @@ const works = [
       id: 'pierrette-essentielle',
       title: 'Pierrette Essentielle',
       link: 'https://www.pierrette-essentielle.com/',
-      description: `Développeur Full Stack pour un site de e-commerce
-        pour Pierrette Essentielle (Freelance). Développement 
-       d'une API sécurisée à l'aide de Nodejs et d'express pour la
-        gestion des produits et des commandes, et développement du 
-        site web client en utilisant React, TailwindCss, Stripe.`,
+      description: `
+      Développeur Full Stack pour un site de e-commerce,
+      Développement & Déploiement de l'api et du site web client,
+      (freelance)
+      `,
       year: '2023',
       thumbnail: pierrette_full_main,
       imgs: [pierrette_full_main, pierrette_full_about, pierrette_phone_item, pierrette_phone_contact],
-      stack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'TailwindCSS'],
+      stack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'TailwindCSS', 'Nginx'],
     },
     {
       id: 'hot-takes',
       title: 'HotTakes',
       link: 'https://github.com/chifouu65',
       description: `Développement d'une API sécurisée pour une 
-      application de critique gastronomique en utilisant Nodejs, 
-      Express, JsonWebToken, Bcrypt et MongoDB. (projet d'étude)`,
+      application de critique gastronomique. (projet d'étude)`,
       year: '2022',
       thumbnail: hottakes,
       imgs: [hottakes],
-      stack: ["JavaScript"]
+      stack: ["JavaScript", "NodeJS", "Express", "MongoDB", "JsonWebToken", "Bcrypt"],
     },
     {
       id: 'kasa',
       title: `Kasa`,
       link: `https://github.com/chifouu65/P7_OC`,
-      description: `Développement d'une maquette pour une agence immobilière à l'aide de React et Scss.  (projet d'étude)`,
+      description: `Développement d'une 
+      application web (avec maquette fournie),
+      pour une agence immobilière. (projet d'étude)`,
       year: '2022',
       thumbnail: kasa_full_item,
       imgs: [kasa_phone_home, kasa_phone_item, kasa_full_about, kasa_full_item],
@@ -75,7 +76,7 @@ const works = [
       year: '2022',
       thumbnail: lapanthere_full,
       imgs: [lapanthere_full, lapanthere_phone],
-      stack: ['React', 'Sass'],
+      stack: ['SEO', 'Performance', 'Accessibility'],
     },
     {
       id: 'ohmyfood',

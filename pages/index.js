@@ -24,6 +24,7 @@ import {
   formations,
   links
 } from '../data/index'
+import { Meta } from '../components/work'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -123,13 +124,32 @@ const Works = () => {
               {item.title}
             </Link> 
             {' '}
-            {item.description}
+            {
+              item.description
+            } 
         </BioSection>
+        <List pl={8} ml={4} my={2}>
+            {
+              item.stack && 
+                <ListItem>
+                    <Meta>Stack</Meta>
+                    <span>
+                        {
+                            item.stack.map((stack, index) => {
+                                return <span key={index}>
+                                    {
+                                        index === item.stack.length - 1 ? stack : stack + ', '
+                                    }
+                                </span>
+                            })
+                        }
+                    </span>
+                </ListItem>
+            }
+            </List>
         </>
       ))
     }
-
-
     <Box mt={4}>
       <NextLink href="/works" passHref scroll={false}>
         <Button

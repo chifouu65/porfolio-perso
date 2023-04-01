@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import {works} from '../data/index'
+import Paragraph from '../components/paragraph'
 
 const Works = () => (
   <Layout title="Works">
