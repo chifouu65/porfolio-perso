@@ -22,7 +22,36 @@ import lapanthere_phone from '../public/images/works/lapanthere/lapanthere_phone
 import kanap_full from '../public/images/works/kanap/kanap_full.png'
 import kanap_phone from '../public/images/works/kanap/kanap_phone.png'
 
+import ai_1 from '../public/images/works/ai/ai_1.png'
+import ai_2 from '../public/images/works/ai/ai_2.png'
+import ai_3 from '../public/images/works/ai/ai_3.png'
+
 const works = [
+  {
+    id: 'ai-powered-3d-website-using-react-threejs',
+    title: 'AI-Powered 3D Website Using React, Three.js',
+    link: 'https://github.com/chifouu65/Ai_Powered_3D_website',
+    description: `
+    ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model\n
+    React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React\n
+    TailwindCSS - a popular utility-first CSS styling framework\n
+    Framer Motion - the most popular library used to bring your React website to life with animations
+    You'll also learn how to:\n
+    
+    Load, create and customize stunning 3D models and geometries with various lights,\n
+     as well as understand the 3D world with a camera and positioning of an object in space.
+    Make your code reusable and scalable using Higher Order Components\n
+     (HOCs) and other industry-standard best practices
+    Add custom color and file support.
+    Generate and use images through DALLE AI
+    Download the resulting t-shirt model image
+    Ensure responsiveness across all devices and improve your site's performance
+    `,
+    year: '2023',
+    thumbnail: ai_1,
+    imgs: [ai_1, ai_2, ai_3],
+    stack: ['React', 'ThreeJS', 'TailwindCSS', 'Framer Motion', 'valtio', 'DALLE AI', 'NodeJS', 'Express', 'Cloudinary'],
+  },
     {
       id: 'pierrette-essentielle',
       title: 'Pierrette Essentielle',

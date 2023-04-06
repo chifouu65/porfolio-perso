@@ -10,6 +10,7 @@ import {
     useColorModeValue,
     Button,
     Divider,
+    Text,
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
@@ -95,7 +96,10 @@ const Work = () => {
                 }
             </Title>
                 {
-                    work.description && work.description
+                    work.description.split('\n').map((text, index) => {
+                        return <Text as={'p'} mt={2} key={index}>{text}</Text>
+                    })
+                    
                 }
             <List ml={4} my={4}>
             {
@@ -107,7 +111,11 @@ const Work = () => {
                         href={
                             work.link
                         }>
-                        {work.link} <ExternalLinkIcon mx="2px" 
+                        {
+                            (work.link).replace('https://', '').replace('http://', '').replace('www.', '').length > 15 ?
+                            (work.link).replace('https://', '').replace('http://', '').replace('www.', '').substring(0, 35) + '...' :
+                            (work.link).replace('https://', '').replace('http://', '').replace('www.', '')
+                        } <ExternalLinkIcon mx="2px" 
                         />
                     </Link>
                 </ListItem>

@@ -125,9 +125,10 @@ const Navbar = props => {
                 </MenuItem>
                 <MenuItem
                   as={Link}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}
                   href="https://github.com/chifouu65/"
                 >
-                  View Source
+                  <IoLogoGithub />Github
                 </MenuItem>
               </MenuList>
             </Menu>
