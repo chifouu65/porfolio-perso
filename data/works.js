@@ -29,23 +29,13 @@ import ai_3 from '../public/images/works/ai/ai_3.png'
 const works = [
   {
     id: 'ai-powered-3d-website-using-react-threejs',
-    title: 'AI-Powered 3D Website Using React, Three.js',
+    title: 'AI 3D Website Using React, Three.js',
     link: 'https://github.com/chifouu65/Ai_Powered_3D_website',
     description: `
-    ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model\n
-    React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React\n
-    TailwindCSS - a popular utility-first CSS styling framework\n
-    Framer Motion - the most popular library used to bring your React website to life with animations
-    You'll also learn how to:\n
-    
-    Load, create and customize stunning 3D models and geometries with various lights,\n
-     as well as understand the 3D world with a camera and positioning of an object in space.
-    Make your code reusable and scalable using Higher Order Components\n
-     (HOCs) and other industry-standard best practices
-    Add custom color and file support.
-    Generate and use images through DALLE AI
-    Download the resulting t-shirt model image
-    Ensure responsiveness across all devices and improve your site's performance
+    Développement d'un site web 3D utilisant React, Three.js, TailwindCSS, Framer Motion, valtio, DALLE AI, NodeJS, Express, Cloudinary.\n
+    ThreeJS - une puissante bibliothèque de graphiques 3D pour le rendu et l'animation du modèle 3D\n
+    DALLE AI - une bibliothèque utilisée pour générer des images à partir de textes\n
+    Se site web permet de customiser un t-shirt en 3D, de générer des images à partir de textes, de télécharger le modèle 3D du t-shirt et de l'envoyer par email.\n
     `,
     year: '2023',
     thumbnail: ai_1,
@@ -58,7 +48,9 @@ const works = [
       link: 'https://www.pierrette-essentielle.com/',
       description: `
       Développeur Full Stack pour un site de e-commerce,
-      Développement & Déploiement de l'api et du site web client,
+      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
+      - Front-end avec React, TailwindCSS, Framer Motion, React Router, React Hook Form, React Icons, React Toastify, React Helmet, React Image Gallery, React Image Lightbox, React Share, React Stripe Checkout, React Slick, React Responsive Carousel, React Lazy Load Image Component, React Infinite Scroll Component, React Infinite Scroll Component, React Inf
+      - Déploiement sur un serveur VPS avec Nginx
       (freelance)
       `,
       year: '2023',
@@ -95,12 +87,9 @@ const works = [
       link: `https://github.com/chifouu65/Projt_4_SEO_NL`,
       description: `J'ai optimisé un site web existant pour améliorer 
       son référencement et sa performance. 
-      J'ai identifié les parties qui n'étaient pas optimisées 
-      pour le référencement et/ou n'étaient pas à jour en termes 
-      d'accessibilité, et j'ai fourni une liste de recommandations 
-      pour améliorer le site en mettant l'accent sur l'impact sur la 
-      vitesse de chargement de la page. J'ai ensuite optimisé le contenu 
-      et le code source du site en appliquant ces recommandations et j'ai 
+      Identifié les parties qui n'étaient pas optimisées pour le
+      référencement et/ou n'étaient pas à jour en termes d'accessibilité,
+      optimisé le contenu et le code source du site en appliquant ces recommandations et j'ai 
       comparé les résultats de performance avant et après l'optimisation. (projet d'étude)`,
       year: '2022',
       thumbnail: lapanthere_full,

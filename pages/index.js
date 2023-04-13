@@ -37,7 +37,7 @@ const Profile = () => {
           <Heading as="h2" variant="page-title">
             Noah Lhote
           </Heading>
-            I'm a freelance and a full-stack developer based in france 
+            I'm a full-stack developer based in france 
         </Box>
         <Box
           flexShrink={0}
