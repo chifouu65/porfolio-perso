@@ -26,7 +26,27 @@ import ai_1 from '../public/images/works/ai/ai_1.png'
 import ai_2 from '../public/images/works/ai/ai_2.png'
 import ai_3 from '../public/images/works/ai/ai_3.png'
 
+import astro_home_phone from '../public/images/works/astro/astro-home-phone.png'
+import astro_product_desktop from '../public/images/works/astro/astro-product-desktop.png'
+import astro_shop_phone from '../public/images/works/astro/astro-shop-phone.png'
+
 const works = [
+  {
+    id: 'astrology-e-commerce',
+    title: 'Astrology E-commerce',
+    link: 'http://astro.pierrette-essentielle.com',
+    description: `
+    Développement d'un site e-commerce pour une boutique d'astrologie,
+    - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
+    - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, 
+    React Toastify, Stripe Checkout, OAuth.
+    - Version Prototype non finalisée
+    `,
+    year: 'En cours',
+    thumbnail: astro_product_desktop,
+    imgs: [astro_product_desktop, astro_shop_phone, astro_home_phone],
+    stack: ['React', 'NextJS', 'Chakra UI', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'Nginx'],
+  },
   {
     id: 'ai-powered-3d-website-using-react-threejs',
     title: 'AI 3D Website Using React, Three.js',
