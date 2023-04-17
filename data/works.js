@@ -31,37 +31,37 @@ import astro_product_desktop from '../public/images/works/astro/astro-product-de
 import astro_shop_phone from '../public/images/works/astro/astro-shop-phone.png'
 
 const works = [
-  {
-    id: 'astrology-e-commerce',
-    title: 'Astrology E-commerce',
-    link: 'http://astro.pierrette-essentielle.com',
-    description: `
-    Développement d'un site e-commerce pour une boutique d'astrologie,
-    - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
-    - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, 
-    React Toastify, Stripe Checkout, OAuth.
-    - Version Prototype non finalisée
-    `,
-    year: 'En cours',
-    thumbnail: astro_product_desktop,
-    imgs: [astro_product_desktop, astro_shop_phone, astro_home_phone],
-    stack: ['React', 'NextJS', 'Chakra UI', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'Nginx'],
-  },
-  {
-    id: 'ai-powered-3d-website-using-react-threejs',
-    title: 'AI 3D Website Using React, Three.js',
-    link: 'https://github.com/chifouu65/Ai_Powered_3D_website',
-    description: `
-    Développement d'un site web 3D utilisant React, Three.js, TailwindCSS, Framer Motion, valtio, DALLE AI, NodeJS, Express, Cloudinary.\n
-    ThreeJS - une puissante bibliothèque de graphiques 3D pour le rendu et l'animation du modèle 3D\n
-    DALLE AI - une bibliothèque utilisée pour générer des images à partir de textes\n
-    Se site web permet de customiser un t-shirt en 3D, de générer des images à partir de textes, de télécharger le modèle 3D du t-shirt et de l'envoyer par email.\n
-    `,
-    year: '2023',
-    thumbnail: ai_1,
-    imgs: [ai_1, ai_2, ai_3],
-    stack: ['React', 'ThreeJS', 'TailwindCSS', 'Framer Motion', 'valtio', 'DALLE AI', 'NodeJS', 'Express', 'Cloudinary'],
-  },
+    {
+      id: 'astrology-e-commerce',
+      title: 'Astrology E-commerce',
+      link: 'http://astro.pierrette-essentielle.com',
+      description: `
+      Développement d'un site e-commerce pour une boutique d'astrologie,
+      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
+      - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, 
+      React Toastify, Stripe Checkout, OAuth.
+      - Version Prototype non finalisée
+      `,
+      year: 'En cours',
+      thumbnail: astro_product_desktop,
+      imgs: [astro_product_desktop, astro_shop_phone, astro_home_phone],
+      stack: ['React', 'NextJS', 'Chakra UI', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'Nginx'],
+    },
+    {
+      id: 'ai-powered-3d-website-using-react-threejs',
+      title: 'AI 3D Website Using React, Three.js',
+      link: 'https://github.com/chifouu65/Ai_Powered_3D_website',
+      description: `
+      Développement d'un site web 3D utilisant React, Three.js, TailwindCSS, Framer Motion, valtio, DALLE AI, NodeJS, Express, Cloudinary.\n
+      ThreeJS - une puissante bibliothèque de graphiques 3D pour le rendu et l'animation du modèle 3D\n
+      DALLE AI - une bibliothèque utilisée pour générer des images à partir de textes\n
+      Se site web permet de customiser un t-shirt en 3D, de générer des images à partir de textes, de télécharger le modèle 3D du t-shirt et de l'envoyer par email.\n
+      `,
+      year: '2023',
+      thumbnail: ai_1,
+      imgs: [ai_1, ai_2, ai_3],
+      stack: ['React', 'ThreeJS', 'TailwindCSS', 'Framer Motion', 'valtio', 'DALLE AI', 'NodeJS', 'Express', 'Cloudinary'],
+    },
     {
       id: 'pierrette-essentielle',
       title: 'Pierrette Essentielle',
