@@ -54,7 +54,7 @@ const works = [
       description: `
       Développement d'un site web 3D utilisant React, Three.js, TailwindCSS, Framer Motion, valtio, DALLE AI, NodeJS, Express, Cloudinary.\n
       ThreeJS - une puissante bibliothèque de graphiques 3D pour le rendu et l'animation du modèle 3D\n
-      DALLE AI - une bibliothèque utilisée pour générer des images à partir de textes\n
+      DALLE AI - une Ai utilisée pour générer des images à partir de textes\n
       Se site web permet de customiser un t-shirt en 3D, de générer des images à partir de textes, de télécharger le modèle 3D du t-shirt et de l'envoyer par email.\n
       `,
       year: '2023',
@@ -69,7 +69,7 @@ const works = [
       description: `
       Développeur Full Stack pour un site de e-commerce,
       - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
-      - Front-end avec React, TailwindCSS, Framer Motion, React Router, React Hook Form, React Icons, React Toastify, React Helmet, React Image Gallery, React Image Lightbox, React Share, React Stripe Checkout, React Slick, React Responsive Carousel, React Lazy Load Image Component, React Infinite Scroll Component, React Infinite Scroll Component, React Inf
+      - Front-end avec React, TailwindCSS, Framer Motion
       - Déploiement sur un serveur VPS avec Nginx
       (freelance)
       `,
