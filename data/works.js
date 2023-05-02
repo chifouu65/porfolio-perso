@@ -36,16 +36,16 @@ const works = [
       title: 'Astrology E-commerce',
       link: 'http://astro.pierrette-essentielle.com',
       description: `
-      Développement d'un site e-commerce pour une boutique d'astrologie,
-      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
-      - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, 
-      React Toastify, Stripe Checkout, OAuth.
-      - Version Prototype non finalisée
+      Développement d'un site Ecommerce pour une boutique d'astrologie.\n
+      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx.\n
+      - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, Stripe Checkout, OAuth.\n
+      - Version Prototype non finalisée.
       `,
-      year: 'En cours',
+      year: '2023',
       thumbnail: astro_product_desktop,
       imgs: [astro_product_desktop, astro_shop_phone, astro_home_phone],
       stack: ['React', 'NextJS', 'Chakra UI', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'Nginx'],
+      type: 'freelance',
     },
     {
       id: 'ai-powered-3d-website-using-react-threejs',
@@ -61,86 +61,92 @@ const works = [
       thumbnail: ai_1,
       imgs: [ai_1, ai_2, ai_3],
       stack: ['React', 'ThreeJS', 'TailwindCSS', 'Framer Motion', 'valtio', 'DALLE AI', 'NodeJS', 'Express', 'Cloudinary'],
+      type: 'project personnel',
     },
     {
       id: 'pierrette-essentielle',
       title: 'Pierrette Essentielle',
       link: 'https://www.pierrette-essentielle.com/',
       description: `
-      Développeur Full Stack pour un site de e-commerce,
-      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx
-      - Front-end avec React, TailwindCSS, Framer Motion
-      - Déploiement sur un serveur VPS avec Nginx
-      (freelance)
+      Développeur Full Stack pour un site de e-commerce.\n
+      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx.\n
+      - Front-end avec React, TailwindCSS, Framer Motion.\n
+      - Déploiement sur un serveur VPS avec Nginx.\n
       `,
       year: '2023',
       thumbnail: pierrette_full_main,
       imgs: [pierrette_full_main, pierrette_full_about, pierrette_phone_item, pierrette_phone_contact],
       stack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'TailwindCSS', 'Nginx'],
+      type: 'freelance',
     },
     {
       id: 'hot-takes',
       title: 'HotTakes',
       link: 'https://github.com/chifouu65/REST-API-Node_Express_Mongo',
       description: `Développement d'une API sécurisée pour une 
-      application de critique gastronomique. (projet d'étude)`,
+      application de critique gastronomique.`,
       year: '2022',
       thumbnail: hottakes,
       imgs: [hottakes],
       stack: ["JavaScript", "NodeJS", "Express", "MongoDB", "JsonWebToken", "Bcrypt"],
+      type: "project d'étude (openClassrooms)",
     },
     {
       id: 'kasa',
       title: `Kasa`,
       link: `https://github.com/chifouu65/P7_OC`,
-      description: `Développement d'une 
-      application web (avec maquette fournie),
-      pour une agence immobilière. (projet d'étude)`,
+      description: `Développement d'une application web (avec maquette fournie).\n
+      pour une agence immobilière.`,
       year: '2022',
       thumbnail: kasa_full_item,
       imgs: [kasa_phone_home, kasa_phone_item, kasa_full_about, kasa_full_item],
       stack: ['React', 'Scss'],
+      type: "project d'étude (openClassrooms)",
     },
     {
       id: 'la-panthere',
       title: `La Panthère`,
       link: `https://github.com/chifouu65/Projt_4_SEO_NL`,
       description: `J'ai optimisé un site web existant pour améliorer 
-      son référencement et sa performance. 
+      son référencement et sa performance.\n 
       Identifié les parties qui n'étaient pas optimisées pour le
-      référencement et/ou n'étaient pas à jour en termes d'accessibilité,
+      référencement et/ou n'étaient pas à jour en termes d'accessibilité.\n
       optimisé le contenu et le code source du site en appliquant ces recommandations et j'ai 
-      comparé les résultats de performance avant et après l'optimisation. (projet d'étude)`,
+      comparé les résultats de performance avant et après l'optimisation.`,
       year: '2022',
       thumbnail: lapanthere_full,
       imgs: [lapanthere_full, lapanthere_phone],
       stack: ['SEO', 'Performance', 'Accessibility'],
+      type: "project d'étude (openClassrooms)",
     },
     {
       id: 'ohmyfood',
       title: `OhMyFood`,
       link: 'https://github.com/chifouu65/p3_OC_NL',
       description: `
-      Développement d'un site web pour une entreprise de commande de repas en ligne.
-      Le concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte. (projet d'étude)`,
+      Développement d'un site web pour une entreprise de commande de repas en ligne.\n
+      Le concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.\n 
+      Plus de perte de temps à consulter la carte.`,
       year: '2022',
       thumbnail: omf_full,
       imgs: [omf_full, omf_phone_item],
       stack: ['Javascript', 'Sass', 'Html'],
+      type: "project d'étude (openClassrooms)",
     },
     {
       id: 'kanap',
       title: `Kanap`,
       link: 'https://github.com/chifouu65/P5-Dev-Web-Kanap',
       description: `
-      Développement d'un site e-commerce pour une marque de canapés. 
+      Développement d'un site e-commerce pour une marque de canapés.\n 
       Le site permet aux utilisateurs de consulter les produits,
-      de les ajouter au panier et de passer commande. (projet d'étude)
+      de les ajouter au panier et de passer commande. 
       `,
       year: '2022',
       thumbnail: kanap_full,
       imgs: [kanap_full, kanap_phone],
       stack: ['Javascript', 'Css', 'Nodejs', 'Express', 'MongoDB'],
+      type: "project d'étude (openClassrooms)",
     }
   ]
 

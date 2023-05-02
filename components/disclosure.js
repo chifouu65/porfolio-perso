@@ -1,5 +1,6 @@
 import { useDisclosure } from '@chakra-ui/react'
 import { Button, Text, useColorModeValue } from '@chakra-ui/react'
+import {cutString} from "../lib/helpers";
 
 function Disclosure({
     text,
@@ -8,12 +9,11 @@ function Disclosure({
     certification,
 }) {
     const { getDisclosureProps, getButtonProps } = useDisclosure()
-  
     const buttonProps = getButtonProps()
     const disclosureProps = getDisclosureProps()
     return (
       <>
-        <Button 
+        <Button
          variant="outline"
          colorScheme={useColorModeValue('purple', 'orange')}
         {...buttonProps}>
@@ -21,10 +21,12 @@ function Disclosure({
         </Button>
         <Text sx={{
           textIndent: '0px',
-        }} 
+        }}
         {...disclosureProps} mt={4}>
           <Text as="span" fontWeight="bold">{year} - </Text>
-          {text}
+          {
+              cutString(text)
+          }
           <br/>
           <Text as="span" fontWeight="bold">({certification}.)</Text>
         </Text>
