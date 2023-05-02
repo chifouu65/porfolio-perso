@@ -25,6 +25,7 @@ import {
   links
 } from '../data/index'
 import { Meta } from '../components/work'
+import Form from "../components/form";
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -226,15 +227,7 @@ const Contact = () => {
           Si vous avez des questions, n'hésitez pas à me contacter.
         </Paragraph>
         <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/contact"
-            scroll={false}
-            rightIcon={<EmailIcon />}
-            colorScheme={useColorModeValue('purple', 'orange')}
-          >
-            Me contacter
-          </Button>
+            <Form/>
         </Box>
       </Section>
   )
