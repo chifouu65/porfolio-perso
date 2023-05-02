@@ -37,15 +37,11 @@ const Work = () => {
        }
     }, [slug])
 
+    console.log(work)
     if (loading) {
         return <div>Loading...</div>
     } else if (error) {
         return  <div>
-            <Head>
-                <title>Work not found - Works - Noah Lhote</title>
-                <meta name="og:title" content={`Work not found - Works - Noah Lhote`} />
-                <meta name="og:description" content="Work not found" />
-            </Head>
             <Layout title="Work not found">
                 <Container>
                     <Title>
@@ -67,17 +63,8 @@ const Work = () => {
     } else {
         return (
         <>
-        <Head>
-            <title>{work.title} - Works - Noah Lhote</title>
-            <meta name="og:title" content={`${work.title} - Works - Noah Lhote`} />
-            <meta name="og:description" content={work.description} />
-            <meta name="keywords" content={
-                work.stack.map((stack) => {
-                    return stack
-                }) + ', ' + work.title
-            }/>
-        </Head>
-        <Layout title={work.title}
+        <Layout title={work.title} description={work.description}
+            keywords={work.stack}
         >
         <Container>
             <Title>

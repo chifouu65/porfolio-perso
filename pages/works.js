@@ -6,8 +6,27 @@ import { WorkGridItem } from '../components/grid-item'
 import {works} from '../data/index'
 import Paragraph from '../components/paragraph'
 
+const keywords = [
+    'Noah Lhote',
+    works.map(work => work.title).join(','),
+    'Dev web',
+    'Développeur web',
+    'Dev Reactjs',
+    'Développeur Reactjs',
+    'Dev Nodejs',
+    'Développeur Nodejs',
+    'Dev Nextjs',
+    'Développeur Nextjs',
+    'Dev Fullstack',
+    'Développeur Fullstack',
+    'Dev Frontend',
+    'Développeur Frontend',
+]
+
 const Works = () => (
-  <Layout title="Works">
+  <Layout
+      keywords={keywords}
+      title="Projects & Réalisations" description={"Mes projets et réalisations, plus sur github."}>
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         Works

@@ -8,8 +8,10 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, description, keywords }) => {
+  const d = `${description}`
   const t = `${title} - Noah Lhote`
+  const k = `${keywords},`
   return (
     <motion.article
       initial="hidden"
@@ -23,8 +25,16 @@ const Layout = ({ children, title }) => {
         {title && (
           <Head>
             <title>{t}</title>
-            <meta name="twitter:title" content={t} />
-            <meta property="og:title" content={t} />
+            <meta name='description' content={d} />
+            <meta name='keywords' content={k} />
+            <meta property='og:title' content={t} />
+            <meta property='og:description' content={d} />
+            <meta property='og:type' content='website' />
+            <meta property='og:site_name' content='Noah Lhote | Portfolio' />
+            <meta name='author' content='Noah Lhote' />
+            <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+            <link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon' />
+            <meta name='viewport' content='width=device-width, initial-scale=1' />
           </Head>
         )}
         {children}

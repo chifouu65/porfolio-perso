@@ -37,12 +37,7 @@ const Posts = () => {
     if (loading) {
         return <div>Loading...</div>
     } else if (error) {
-        return  <div>
-            <Head>
-                <title>Post not found - Noah Lhote</title>
-                <meta name="og:title" content={`Post not found - Noah Lhote`} />
-                <meta name="og:description" content="Post not found" />
-            </Head>
+        return  <>
             <Layout title="Post not found">
                 <Container>
                     <Title>
@@ -60,24 +55,12 @@ const Posts = () => {
                     </Button>
                 </Container>
             </Layout>
-        </div>
+        </>
     } else {
         return (
         <>
-        <Head>
-            <title>{post.title} - Posts - Noah Lhote</title>
-            <meta name="og:title" content={`${post.title} - Posts - Noah Lhote`} />
-            <meta name="og:description" content={post.description} />
-            <meta name="keywords" content={
-                post.tags.map((stack) => {
-                    return stack
-                }) + ', ' + post.title
-            }/>
-        </Head>
-        <Layout title={post.title}
-        >
+        <Layout title={post.title} description={post.description} keywords={post.tags}>
         <Container>
-            
             <Title>
                 {
                     post.title && post.title + ' ' 
