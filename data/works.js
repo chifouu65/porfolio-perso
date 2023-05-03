@@ -1,6 +1,7 @@
 import omf_full from '../public/images/works/omf/omf-full.png'
 import omf_phone_item from '../public/images/works/omf/omf-phone_item.png'
 
+import pierrette_full_2 from '../public/images/works/pierrette-essentielle/pierrette-full2.png'
 import pierrette_full_main from '../public/images/works/pierrette-essentielle/pierrette-full.png'
 import pierrette_full_about from '../public/images/works/pierrette-essentielle/pierrette-full_about.png'
 import pierrette_phone_item from '../public/images/works/pierrette-essentielle/pierrette-phone_item.png'
@@ -37,7 +38,7 @@ const works = [
       link: 'http://astro.pierrette-essentielle.com',
       description: `
       Développement d'un site Ecommerce pour une boutique d'astrologie.\n
-      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx.\n
+      - API sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx.\n
       - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, Stripe Checkout, OAuth.\n
       - Version Prototype non finalisée.
       `,
@@ -75,7 +76,7 @@ const works = [
       `,
       year: '2023',
       thumbnail: pierrette_full_main,
-      imgs: [pierrette_full_main, pierrette_full_about, pierrette_phone_item, pierrette_phone_contact],
+      imgs: [pierrette_full_main, pierrette_full_2, pierrette_full_about, pierrette_phone_item, pierrette_phone_contact],
       stack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'TailwindCSS', 'Nginx'],
       type: 'freelance',
     },
@@ -101,7 +102,7 @@ const works = [
       thumbnail: kasa_full_item,
       imgs: [kasa_phone_home, kasa_phone_item, kasa_full_about, kasa_full_item],
       stack: ['React', 'Scss'],
-      type: "project d'étude (openClassrooms)",
+      type: "project d'étude 'openClassrooms'",
     },
     {
       id: 'la-panthere',
@@ -117,7 +118,7 @@ const works = [
       thumbnail: lapanthere_full,
       imgs: [lapanthere_full, lapanthere_phone],
       stack: ['SEO', 'Performance', 'Accessibility'],
-      type: "project d'étude (openClassrooms)",
+      type: "project d'étude 'openClassrooms'",
     },
     {
       id: 'ohmyfood',
@@ -131,7 +132,7 @@ const works = [
       thumbnail: omf_full,
       imgs: [omf_full, omf_phone_item],
       stack: ['Javascript', 'Sass', 'Html'],
-      type: "project d'étude (openClassrooms)",
+      type: "project d'étude 'openClassrooms'",
     },
     {
       id: 'kanap',
@@ -146,7 +147,7 @@ const works = [
       thumbnail: kanap_full,
       imgs: [kanap_full, kanap_phone],
       stack: ['Javascript', 'Css', 'Nodejs', 'Express', 'MongoDB'],
-      type: "project d'étude (openClassrooms)",
+      type: "project d'étude 'openClassrooms'",
     }
   ]
 

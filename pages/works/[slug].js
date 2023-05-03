@@ -126,7 +126,14 @@ const Work = () => {
                         {
                             work.imgs &&
                             work.imgs.map((img, index) => {
-                                return <WorkImage key={index} src={img.src}/>
+                                return <WorkImage
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                        objectFit: 'cover',
+                                        objectPosition: 'center',
+                                    }}
+                                    key={index} src={img.src}/>
                             })
                         }
                     </Container>

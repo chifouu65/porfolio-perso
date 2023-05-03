@@ -196,15 +196,15 @@ const Links = () => {
                 Mes réseaux sociaux
             </Heading>
             <List>
-                {
-                    links.map((item, index) => (
-                        <ListItem pb={4} key={index}>
-                            <Link
-                                sx={{
-                                    fontWeight: 'bold',
-                                }}
-                                color={useColorModeValue('purple.500', 'orange.200')}
-                                href={item.link} target="_blank">
+                <ListItem pb={4}>
+                    {
+                        links.map((item, index) => (
+                            <Link key={index}
+                                  sx={{
+                                      fontWeight: 'bold',
+                                  }}
+                                  color={useColorModeValue('purple.500', 'orange.200')}
+                                  href={item.link} target="_blank">
                                 <Button
                                     colorScheme={useColorModeValue('purple', 'orange')}
                                     variant="outline"
@@ -213,9 +213,9 @@ const Links = () => {
                                     @{item.title}
                                 </Button>
                             </Link>
-                        </ListItem>
-                    ))
-                }
+                        ))
+                    }
+                </ListItem>
             </List>
         </Section>
     )
