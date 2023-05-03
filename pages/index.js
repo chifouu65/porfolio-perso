@@ -10,9 +10,9 @@ import {
     useColorModeValue,
     chakra,
     Text,
-    Divider
+    Divider, Tooltip
 } from '@chakra-ui/react'
-import {ChevronRightIcon, EmailIcon} from '@chakra-ui/icons'
+import {ChevronRightIcon, EmailIcon, ExternalLinkIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import {BioSection, BioYear} from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -119,10 +119,14 @@ const Works = () => {
                         <BioSection key={index} pb={1}>
                             <BioYear>
                                 {item.year} {' - '}
-                                <Link sx={{fontWeight: 'bold',}} color={useColorModeValue('purple.500', 'orange.200')}
-                                      as={NextLink} href={item.link} passHref scroll={false}>
-                                    {item.title} :
-                                </Link>
+                                <Tooltip label={
+                                    item.link
+                                } aria-label='A tooltip'>
+                                    <Link sx={{fontWeight: 'bold',}} color={useColorModeValue('purple.500', 'orange.200')}
+                                          as={NextLink} href={item.link} passHref scroll={false}>
+                                        {item.title} :
+                                    </Link>
+                                </Tooltip>
                             </BioYear>
                             <br/>
                             {' '}
@@ -168,27 +172,7 @@ const Works = () => {
         </Section>
     )
 }
-const Formations = () => {
-    return (
-        <Section delay={0.3}>
-            <Heading as="h3" pb={2} variant="section-title">
-                Formations et Certifications
-            </Heading>
-            {
-                formations.map((item, index) => (
-                    <BioSection key={index} pb={4}>
-                        <Disclosure
-                            title={item.title}
-                            text={item.text}
-                            year={item.year}
-                            certification={item.certification}
-                        />
-                    </BioSection>
-                ))
-            }
-        </Section>
-    )
-}
+
 const Links = () => {
     return (
         <Section delay={0.3}>
@@ -199,7 +183,7 @@ const Links = () => {
                 <ListItem pb={4}>
                     {
                         links.map((item, index) => (
-                            <Link key={index}
+                            <Link ml={4} key={index}
                                   sx={{
                                       fontWeight: 'bold',
                                   }}
@@ -220,21 +204,7 @@ const Links = () => {
         </Section>
     )
 }
-const Contact = () => {
-    return (
-        <Section delay={0.3}>
-            <Heading as="h3" variant="section-title">
-                Contact
-            </Heading>
-            <Paragraph>
-                Si vous avez des questions, n'hésitez pas à me contacter.
-            </Paragraph>
-            <Box align="center" my={4}>
-                <Form/>
-            </Box>
-        </Section>
-    )
-}
+
 
 const Home = () => (
     <Layout>
@@ -242,9 +212,7 @@ const Home = () => (
             <Profile/>
             <About/>
             <Works/>
-            <Formations/>
             <Links/>
-            <Contact/>
         </Container>
     </Layout>
 )

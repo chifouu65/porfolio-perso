@@ -37,7 +37,6 @@ const Work = () => {
         }
     }, [slug])
 
-    console.log(work)
     if (loading) {
         return <div>Loading...</div>
     } else if (error) {
@@ -85,7 +84,9 @@ const Work = () => {
                         <List ml={4} my={4}>
                             {
                                 work.link && <ListItem>
-                                    <Meta>Website</Meta>
+                                    <Meta>
+                                        {work.link.includes('github') ? 'Github' : 'Website'}
+                                    </Meta>
                                     <Link
                                         target="_blank"
                                         color={useColorModeValue('purple.500', 'orange.200')}
@@ -102,8 +103,8 @@ const Work = () => {
                                 </ListItem>
                             }
                             <ListItem>
-                                <Meta>Platform</Meta>
-                                <span>Website</span>
+                                <Meta>Mission</Meta>
+                                <span>{work.type}</span>
                             </ListItem>
                             {
                                 work.stack &&
