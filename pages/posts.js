@@ -19,8 +19,9 @@ const Posts = () => {
                 <Section delay={0.1}>
                     <SimpleGrid columns={[1]} gap={6}>
                     {
-                            posts.map(post => (
+                            posts.map((post, index) => (
                                 <Box
+                                key={index}
                                 as={Link}
                                 color={useColorModeValue('gray.700', 'gray.200')}
                                 _hover={{ textDecoration: 'none' }}
