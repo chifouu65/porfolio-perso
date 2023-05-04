@@ -122,7 +122,8 @@ const Works = () => {
                                 <Tooltip label={
                                     item.link
                                 } aria-label='A tooltip'>
-                                    <Link sx={{fontWeight: 'bold',}} color={useColorModeValue('purple.500', 'orange.200')}
+                                    <Link sx={{fontWeight: 'bold',}}
+                                          color={useColorModeValue('purple.500', 'orange.200')}
                                           as={NextLink} href={item.link} passHref scroll={false}>
                                         {item.title} :
                                     </Link>

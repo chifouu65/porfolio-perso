@@ -1,9 +1,10 @@
+import works from './works'
+
 const formations = [
     {
-      title: 'Web Developer OpenClassRooms',
+      title: 'Développeur web OpenClassRooms',
       link: 'https://www.openclassrooms.com/fr/paths/185-developpeur-web-junior',
-      text: `
-      J'ai suivi une formation chez OpenClassRooms où j'ai acquis des compétences en développement web.
+      text: `J'ai suivi une formation chez OpenClassRooms où j'ai acquis des compétences en développement web.
       Stack:
       – SEO & Optimisations 
       – Développement d'API (nodejs, express)
@@ -15,9 +16,9 @@ const formations = [
       certification: 'Rncp level 5 (Bac+2)',
     },
     {
-      title: 'Developpeur Full Stack - Ynov Campus',
+      title: 'Développeur FullStack - Ynov Campus',
       link: 'https://www.ynov.com/campus/rennes/',
-      text:` 
+      text:`Au cours de cette formation, je vais :
       – Dev mobile (React/Java/Kotlin/Swift/Flutter/.NET…) 
       – Web avancé front (React/Angular/Vue.JS) 
       – Développement API (Django/Rails/Symfony/Laravel) 

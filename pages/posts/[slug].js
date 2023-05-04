@@ -1,6 +1,6 @@
-import { useRouter } from 'next/router'
-import { posts } from '../../data/index'
-import { useEffect, useState } from 'react'
+import {useRouter} from 'next/router'
+import {posts} from '../../data/index'
+import {useEffect, useState} from 'react'
 import {
     Container,
     ListItem,
@@ -10,19 +10,19 @@ import {
     Text,
     List
 } from '@chakra-ui/react'
-import { Title, WorkImage, Meta } from '../../components/work'
+import {Title, WorkImage, Meta} from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Head from 'next/head'
 
 const Posts = () => {
     const router = useRouter()
-    const { slug } = router.query
+    const {slug} = router.query
     const [post, setPost] = useState(null)
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-       if (slug) {
+        if (slug) {
             const postFind = posts.find(post => post.id === slug)
             if (postFind) {
                 setPost(postFind)
@@ -31,21 +31,21 @@ const Posts = () => {
                 setError('Post not found')
                 setLoading(false)
             }
-       }
+        }
     }, [slug])
 
     if (loading) {
         return <div>Loading...</div>
     } else if (error) {
-        return  <>
+        return <>
             <Layout title="Post not found">
                 <Container>
                     <Title>
                         Post not found
                     </Title>
-                        The post you are looking for does not exist.
+                    The post you are looking for does not exist.
                 </Container>
-                <Divider my={4} />
+                <Divider my={4}/>
                 <Container>
                     <Button
                         colorScheme={useColorModeValue('purple', 'orange')}
@@ -58,49 +58,49 @@ const Posts = () => {
         </>
     } else {
         return (
-        <>
-        <Layout title={post.title} description={post.description} keywords={post.tags}>
-        <Container>
-            <Title>
-                {
-                    post.title && post.title + ' ' 
-                }
-            </Title>
-                {
-                    post.description.map((desc, index) => {
-                        return ( 
-                            
-                                desc.includes('$$') ?
-                                <Text key={index} as="h2"
-                                    mb={2}
-                                    fontWeight="bold"
-                                    fontSize="xl"
-                                    pl={2}
-                                    bg={useColorModeValue('purple.100', 'orange.100')}
-                                    color={useColorModeValue('purple.500', 'orange.500')}
-                                >
-                                    {
-                                        desc.replace('$$', '')
-                                    }
-                                </Text> :
-                                <Text key={index} mb={2} as="p" fontSize="xl">
-                                    {
-                                        desc
-                                    }
-                                </Text>
-                        )
-                    })
-                }
-            <List ml={4} my={4}>
-            <ListItem>
-                <Meta>Platform</Meta>
-                <span>Website</span>
-            </ListItem>
-            {
-                post.tags && 
-                <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>
+            <>
+                <Layout title={post.title} description={post.description} keywords={post.tags}>
+                    <Container>
+                        <Title>
+                            {
+                                post.title && post.title + ' '
+                            }
+                        </Title>
+                        {
+                            post.description.map((desc, index) => {
+                                return (
+
+                                    desc.includes('$$') ?
+                                        <Text key={index} as="h2"
+                                              mb={2}
+                                              fontWeight="bold"
+                                              fontSize="xl"
+                                              pl={2}
+                                              bg={useColorModeValue('purple.100', 'orange.100')}
+                                              color={useColorModeValue('purple.500', 'orange.500')}
+                                        >
+                                            {
+                                                desc.replace('$$', '')
+                                            }
+                                        </Text> :
+                                        <Text key={index} mb={2} as="p" fontSize="xl">
+                                            {
+                                                desc
+                                            }
+                                        </Text>
+                                )
+                            })
+                        }
+                        <List ml={4} my={4}>
+                            <ListItem>
+                                <Meta>Platform</Meta>
+                                <span>Website</span>
+                            </ListItem>
+                            {
+                                post.tags &&
+                                <ListItem>
+                                    <Meta>Stack</Meta>
+                                    <span>
                         {
                             post.tags.map((stack, index) => {
                                 return <span key={index}>
@@ -111,22 +111,22 @@ const Posts = () => {
                             })
                         }
                     </span>
-                </ListItem>
-            }
-            </List>
-            {
-                post.images && 
-                post.images.map((img, index) => {
-                        return <WorkImage key={index} src={img.src.src}/>
-                    })
-            }
-        </Container>
-        </Layout>
-        </>
+                                </ListItem>
+                            }
+                        </List>
+                        {
+                            post.images &&
+                            post.images.map((img, index) => {
+                                return <WorkImage key={index} src={img.src.src}/>
+                            })
+                        }
+                    </Container>
+                </Layout>
+            </>
         )
     }
-  }
-  
-  export default Posts
-  export { getServerSideProps } from '../../components/chakra'
+}
+
+export default Posts
+export {getServerSideProps} from '../../components/chakra'
   

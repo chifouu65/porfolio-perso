@@ -71,7 +71,8 @@ const Work = () => {
                         </Title>
                         {
                             work.year &&
-                            <Badge mb={2} bg={ useColorModeValue('purple.500', 'orange.200') } color={ useColorModeValue('white', 'gray.900') }>
+                            <Badge mb={2} bg={useColorModeValue('purple.500', 'orange.200')}
+                                   color={useColorModeValue('white', 'gray.900')}>
                                 {work.year}
                             </Badge>
                         }
