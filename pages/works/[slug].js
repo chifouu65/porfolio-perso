@@ -16,6 +16,7 @@ import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Head from 'next/head'
+import SliderComponent from "../../components/slider";
 
 const Work = () => {
     const router = useRouter()
@@ -122,22 +123,10 @@ const Work = () => {
                             })
                         }
                     </span>
-                                </ListItem>
-                            }
-                        </List>
-                        {
-                            work.imgs &&
-                            work.imgs.map((img, index) => {
-                                return <WorkImage
-                                    style={{
-                                        width: '100%',
-                                        height: 'auto',
-                                        objectFit: 'cover',
-                                        objectPosition: 'center',
-                                    }}
-                                    key={index} src={img.src}/>
-                            })
-                        }
+                    </ListItem>
+                    }
+                    </List>
+                        <SliderComponent cards={work.imgs}/>
                     </Container>
                 </Layout>
             </>

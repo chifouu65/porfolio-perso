@@ -5,7 +5,7 @@ import {
     AccordionButton,
     AccordionPanel,
     AccordionIcon, Box,
-    Center, Text, Heading, Divider, useColorModeValue, Badge, Highlight, Tooltip, List, ListItem, ListIcon
+    Center, Text, Heading, Divider, useColorModeValue, Badge, Highlight, Tooltip, List, ListItem, ListIcon, Grid
 } from '@chakra-ui/react'
 import {MdWork} from 'react-icons/md'
 import {cutString} from "../lib/helpers";
@@ -74,8 +74,8 @@ function Page() {
                     recherche d'une entreprise pour un contrat d'apprentissage.
                 </Text>
                 <Center>
-                    <List spacing={3} >
-                        <ListItem mt={2} >
+                    <List spacing={3}>
+                        <ListItem mt={2}>
                             <Tooltip label={
                                 "M'envoyer un mail"
                             } aria-label='A tooltip'>
@@ -234,28 +234,36 @@ function Page() {
                         <Acrd
                             title='Compétences'
                             content={
+
                                 skills.map((item, index) => (
-                                    <Box pb={4} key={index}>
+                                    <Center pb={4} key={index} sx={{
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                    }}>
                                         <Heading variant="section-title" mb={4}>
                                             {item.title}
                                         </Heading>
                                         <List spacing={3}>
                                             {
                                                 item.lang && item.lang.map((lang, index) => (
-                                                    <ListItem key={index}>
+                                                    <ListItem key={index} sx={{display: 'flex', alignItems: 'center'}}>
                                                         <ListIcon as={lang.icon}
                                                                   color={useColorModeValue('purple.500', 'orange.200')}/>
-                                                        {lang.title}
+                                                        <Text fontSize={{base: 'sm', md: 'normal'}}
+                                                              fontWeight="normal">
+                                                            {lang.title}
+                                                        </Text>
                                                     </ListItem>
                                                 ))
                                             }
                                         </List>
-                                    </Box>
+                                    </Center>
                                 ))
                             }
                             icon={<GiFamilyTree fontSize={25}/>}
                         />
                     </Accordion>
+                    <br/>
                 </Box>
             </Center>
         </>
@@ -263,3 +271,4 @@ function Page() {
 }
 
 export default Page
+export {getServerSideProps} from '../components/chakra'

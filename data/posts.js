@@ -103,8 +103,8 @@ const posts = [
             `, `Vue.js est particulièrement adapté aux projets de petite et moyenne envergure, ainsi qu'aux projets nécessitant une grande flexibilité et une facilité d'intégration avec d'autres frameworks.
             `,
             `Autres frameworks Front-end JavaScript à considérer`,
-            `A. Ember.js
-            Ember.js est un framework Front-end JavaScript complet et robuste, conçu pour les applications web complexes.
+            `$$A. Ember.js`, 
+            `Ember.js est un framework Front-end JavaScript complet et robuste, conçu pour les applications web complexes.
             
             
             `, `$$B. Backbone.js`, `
@@ -114,18 +114,18 @@ const posts = [
             `, `$$C. Meteor`, `
             Meteor est un framework Front-end JavaScript complet qui prend en charge le développement complet de l'application, de la base de données au Front-end.`,
             `V. Comment choisir le meilleur framework Front-end pour votre projet ? 
-            `, `A. Évaluez les besoins de votre projet`, `
+            `, `$$A. Évaluez les besoins de votre projet`, `
                1. Quels sont les fonctionnalités nécessaires pour votre application ?`, `
                2. Quelle est la taille de votre application ?`, `
                3. Quel est le niveau de complexité de votre application ?`, `
-            `, `B. Considérez la taille et la complexité de votre projet`, `
+            `, `$$B. Considérez la taille et la complexité de votre projet`, `
                1. Quel est le niveau de compétences de votre équipe de développement ?`, `
                2. Quelle est la taille de votre équipe de développement ?`, `
                3. Quelle est la durée de votre projet ?`, `
-            `, `C. Évaluez les compétences de votre équipe de développement`, `
+            `, `$$C. Évaluez les compétences de votre équipe de développement`, `
                1. Quelle est la connaissance de votre équipe de développement des différents frameworks Front-end ?`, `
                2. Est-ce que votre équipe de développement a l'expérience de travailler avec un framework Front-end en particulier ?`, `
-            `, `D. Comparez les avantages et les inconvénients des différents frameworks`, `
+            `, `$$D. Comparez les avantages et les inconvénients des différents frameworks`, `
                1. Quels sont les avantages et les inconvénients de chaque framework ?`, `
                2. Comment chaque framework répond-il à vos besoins spécifiques ?`, `
                3. Quel est le niveau de support et de documentation de chaque framework ?`,
