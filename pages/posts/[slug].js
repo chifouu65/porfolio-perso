@@ -110,7 +110,7 @@ const Posts = () => {
                         {
                             post.description.map((desc, index) => {
                                 return (
-                                    isTitle(desc)
+                                    isTitle(desc, index)
                                 )
                             }
                         )}
