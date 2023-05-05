@@ -4,8 +4,7 @@ const formations = [
     {
       title: 'Développeur web OpenClassRooms',
       link: 'https://www.openclassrooms.com/fr/paths/185-developpeur-web-junior',
-      text: `J'ai suivi une formation chez OpenClassRooms où j'ai acquis des compétences en développement web.
-      Stack:
+      text: `J'ai suivi une formation chez OpenClassRooms où j'ai acquis ces compétences :
       – SEO & Optimisations 
       – Développement d'API (nodejs, express)
       – Développement web (Reactjs, Vuejs, Sass, Javascript)

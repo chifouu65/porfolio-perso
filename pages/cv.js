@@ -67,7 +67,7 @@ function Page() {
                     md: 'normal'
                 }} fontWeight="normal">
                     Je suis un développeur web fullstack passionné.
-                    J'ai commencé à coder en 2019, sur des jeux vidéo avec le langage Java.
+                    J'ai commencé à coder sur des jeux vidéo avec le langage Java.
                     J'ai ensuite découvert le web, et j'ai commencé à apprendre les bases du dev-web avec le html/css/js
                     pour ensuite faire une formation et obtenir mon diplôme de développeur web.
                     Je suis actuellement toujours en formation pour devenir développeur web fullstack, je suis donc à la
