@@ -37,13 +37,13 @@ const works = [
         title: 'Astrology E-commerce',
         link: 'http://astro.pierrette-essentielle.com',
         description: `Développement d'un site Ecommerce pour une boutique d'astrologie. (Prototype)\n
-      - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, 
-      Stripe Checkout, OAuth.\n
-      - Version Prototype pour démo.\n`,
+        - Front-end avec React, NextJs, Chakra UI, React Hook Form, React Icons, Stripe Checkout, OAuth.\n
+        - SEO avec NextJs, NextJs Head.\n
+        - Version Prototype pour démo.\n`,
         year: '2023',
         thumbnail: astro_product_desktop,
         imgs: [astro_product_desktop, astro_shop_phone, astro_home_phone],
-        stack: ['React', 'NextJS', 'Chakra UI', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'Nginx'],
+        stack: ['React', 'NextJS', 'Chakra UI', 'NodeJS', 'Express', 'MongoDB', 'Stripe', 'Nginx', 'SEO', 'OAuth'],
         type: 'freelance',
     },
     {
@@ -51,9 +51,10 @@ const works = [
         title: 'AI 3D Website Using React, Three.js',
         link: 'https://github.com/chifouu65/Ai_Powered_3D_website',
         description: `Développement d'un site web 3D utilisant React, Three.js, TailwindCSS, Framer Motion, valtio, DALLE AI, NodeJS, Express, Cloudinary.\n
-      ThreeJS - une puissante bibliothèque de graphiques 3D pour le rendu et l'animation du modèle 3D\n
-      DALLE AI - une Ai utilisée pour générer des images à partir de textes\n
-      Se site web permet de customiser un t-shirt en 3D, de générer des images à partir de textes, de télécharger le modèle 3D du t-shirt et de l'envoyer par email.\n `,
+        ThreeJS - à en charge la partie 3D du site web\n
+        Il permet d'afficher un modèle 3D d'un t-shirt, de le customiser et de le télécharger.\n
+        DALLE AI - une Ai utilisée pour générer des images à partir de textes.\n
+        - Se site web permet de customiser un t-shirt en 3D, de générer des images à partir de textes, de télécharger le modèle 3D du t-shirt.\n `,
         year: '2023',
         thumbnail: ai_1,
         imgs: [ai_1, ai_2, ai_3],
@@ -65,9 +66,9 @@ const works = [
         title: 'Pierrette Essentielle',
         link: 'https://www.pierrette-essentielle.com/',
         description: `Développeur Full Stack pour un site de e-commerce.\n
-      - API REST sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx.\n
-      - Front-end avec React, TailwindCSS, Framer Motion.\n
-      - Déploiement sur un serveur VPS avec Nginx.\n`,
+        - API sécurisée avec NodeJS, Express, MongoDB, Stripe, Nginx, Https.\n
+        - Front-end avec React, TailwindCSS, Framer Motion.\n
+        - Déploiement sur un serveur VPS avec Nginx.\n`,
         year: '2023',
         thumbnail: pierrette_full_main,
         imgs: [pierrette_full_main, pierrette_full_2, pierrette_full_about, pierrette_phone_item, pierrette_phone_contact],
@@ -78,7 +79,9 @@ const works = [
         id: 'hot-takes',
         title: 'HotTakes',
         link: 'https://github.com/chifouu65/REST-API-Node_Express_Mongo',
-        description: `Développement d'une API sécurisée pour une application de critique gastronomique.\n`,
+        description: `Développement d'une API sécurisée pour une application de critique gastronomique, \n
+        à l'aide de NodeJS, Express, MongoDB, JsonWebToken, Bcrypt.\n
+        `,
         year: '2022',
         thumbnail: hottakes,
         imgs: [hottakes],
@@ -89,7 +92,8 @@ const works = [
         id: 'kasa',
         title: `Kasa`,
         link: `https://github.com/chifouu65/P7_OC`,
-        description: `Développement d'une application web (avec maquette fournie).\n pour une agence immobilière.\n`,
+        description: `Développement d'une application web React, Sass (avec maquette fournie).\n 
+        pour une agence immobilière.\n`,
         year: '2022',
         thumbnail: kasa_full_item,
         imgs: [kasa_phone_home, kasa_phone_item, kasa_full_about, kasa_full_item],
@@ -100,11 +104,11 @@ const works = [
         id: 'la-panthere',
         title: `La Panthère`,
         link: `https://github.com/chifouu65/Projt_4_SEO_NL`,
-        description: `J'ai optimisé un site web existant pour améliorer 
-      son référencement et sa performance.\n 
-      Identifié les parties qui n'étaient pas optimisées pour le référencement et/ou n'étaient pas à jour en termes d'accessibilité.\n
-      optimisé le contenu et le code source du site en appliquant ces recommandations et j'ai 
-      comparé les résultats de performance avant et après l'optimisation.\n`,
+        description: `J'ai optimisé un site web existant pour améliorer son référencement et sa performance.\n 
+        - Identifié les parties qui n'étaient pas optimisées pour le référencement et/ou n'étaient pas à jour en termes d'accessibilité.\n
+        - Optimisé le contenu et le code source du site en appliquant ces recommandations 
+        - J'ai fais des tests de performance et d'accessibilité pour vérifier que les améliorations apportées étaient efficaces.\n
+        - J'ai rédigé un rapport d'optimisation pour présenter les résultats de mon travail et les recommandations pour l'avenir.`,
         year: '2022',
         thumbnail: lapanthere_full,
         imgs: [lapanthere_full, lapanthere_phone],
@@ -116,8 +120,7 @@ const works = [
         title: `OhMyFood`,
         link: 'https://github.com/chifouu65/p3_OC_NL',
         description: `Développement d'un site web pour une entreprise de commande de repas en ligne.\n
-      Le concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.\n 
-      Plus de perte de temps à consulter la carte.\n`,
+        - L'application permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.`,
         year: '2022',
         thumbnail: omf_full,
         imgs: [omf_full, omf_phone_item],
@@ -129,8 +132,8 @@ const works = [
         title: `Kanap`,
         link: 'https://github.com/chifouu65/P5-Dev-Web-Kanap',
         description: `Développement d'un site e-commerce pour une marque de canapés.\n 
-      Le site permet aux utilisateurs de consulter les produits,
-      de les ajouter au panier et de passer commande. \n`,
+        - Le site permet aux utilisateurs de consulter les produits.\n
+        - De les ajouter au panier et de passer commande.`,
         year: '2022',
         thumbnail: kanap_full,
         imgs: [kanap_full, kanap_phone],
