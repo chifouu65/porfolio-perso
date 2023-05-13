@@ -31,7 +31,65 @@ import astro_home_phone from '../public/images/works/astro/astro-home-phone.png'
 import astro_product_desktop from '../public/images/works/astro/astro-product-desktop.png'
 import astro_shop_phone from '../public/images/works/astro/astro-shop-phone.png'
 
+import chat_D from '../public/images/works/messenger/chat_D.png'
+import chat_P from '../public/images/works/messenger/chat_P.png'
+import home_D from '../public/images/works/messenger/home_D.png'
+import home_P from '../public/images/works/messenger/home_P.png'
+import login_D from '../public/images/works/messenger/login_D.png'
+import login_P from '../public/images/works/messenger/login_P.png'
+
 const works = [
+    {
+        id: 'messenger-clone',
+        title: 'Messenger Clone',
+        link: 'https://github.com/chifouu65/messenger-clone-nextjs',
+        description: `Développement d'un clone de Messenger avec React, NextJs, TailwindCSS, Next-Auth, Prisma, toastify, zustand, pusherJs, framer-motion, react-icons, react-hook-form, react-select, axios, bcrypt, clsx, date-fns, lodash, prisma, cloudinary, pusher, next-superjson et next-cloudinary.\n
+        - Authentification avec Next-Auth et OAuth.\n
+        - Base de données avec Prisma et MongoDB.\n
+        - Upload d'images avec Cloudinary.\n
+        - Chat en temps réel avec PusherJs.\n
+        - Déploiement avec Vercel.\n
+        - Responsive design.\n
+        - SEO avec NextJs.\n
+        - PWA avec NextJs.\n
+        - Dark mode avec TailwindCSS.\n
+        - Animations avec Framer Motion.\n
+        - Gestion d'état avec Zustand.\n
+        - Gestion des formulaires avec React Hook Form.\n
+        - Gestion des classes avec Clsx.\n
+        - Gestion des websockets avec Pusher.\n
+        - Gestion des données avec Prisma.\n
+        - Gestion des images avec Cloudinary.`,
+        year: '2023',
+        thumbnail: home_D,
+        imgs: [home_D, home_P, login_D, login_P, chat_D, chat_P],
+        stack: [
+            'React',
+            'NextJS',
+            'TailwindCSS',
+            'Next-Auth',
+            'Prisma',
+            'toastify',
+            'zustand',
+            'pusherJs',
+            'framer-motion',
+            'react-icons',
+            'react-hook-form',
+            'react-select',
+            'axios',
+            'bcrypt',
+            'clsx',
+            'date-fns',
+            'lodash',
+            'prisma',
+            'cloudinary',
+            'pusher',
+            'next-superjson',
+            'next-cloudinary',
+        ],
+        video: 'https://www.youtube.com/watch?v=oxhSJZu-jFI&t=24s',
+        type: 'project personnel',
+    },
     {
         id: 'astrology-e-commerce',
         title: 'Astrology E-commerce',

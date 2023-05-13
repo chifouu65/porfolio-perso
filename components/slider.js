@@ -20,7 +20,7 @@ const settings = {
     infinite: true,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
 };
@@ -56,30 +56,6 @@ export default function SliderComponent({cards}) {
                 type="text/css"
                 href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
             />
-            {/* Left Icon */}
-            <IconButton
-                aria-label="left-arrow"
-                variant="ghost"
-                position="absolute"
-                left={side}
-                top={top}
-                transform={'translate(0%, -50%)'}
-                zIndex={2}
-                onClick={() => slider?.slickPrev()}>
-                <BiLeftArrowAlt size="40px" />
-            </IconButton>
-            {/* Right Icon */}
-            <IconButton
-                aria-label="right-arrow"
-                variant="ghost"
-                position="absolute"
-                right={side}
-                top={top}
-                transform={'translate(0%, -50%)'}
-                zIndex={2}
-                onClick={() => slider?.slickNext()}>
-                <BiRightArrowAlt size="40px" />
-            </IconButton>
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
                 {cards.map((card, index) => (

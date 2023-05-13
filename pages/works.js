@@ -27,7 +27,7 @@ const Works = () => (
     <Layout
         keywords={keywords}
         title="Projects & Réalisations" description={"Mes projets et réalisations, plus sur github."}>
-        <Container>
+        <Container maxW={'2xl'}>
             <Heading as="h3" fontSize={20} mb={4}>
                 Works
             </Heading>

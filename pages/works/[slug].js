@@ -15,8 +15,8 @@ import {
 import {ExternalLinkIcon} from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from '../../components/work'
 import Layout from '../../components/layouts/article'
-import Head from 'next/head'
 import SliderComponent from "../../components/slider";
+import YouTube from "react-youtube";
 
 const Work = () => {
     const router = useRouter()
@@ -24,7 +24,16 @@ const Work = () => {
     const [work, setWork] = useState(null)
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(true)
-
+    const opts = {
+        maxWidth: '640',
+        width: '100%',
+        playerVars: {
+          autoplay: 1,
+        },
+    };
+    function _onReady(event) {
+        event.target.pauseVideo();
+    }
     useEffect(() => {
         if (slug) {
             const workFind = works.find(work => work.id === slug)
@@ -66,7 +75,7 @@ const Work = () => {
                 <Layout title={work.title} description={work.description}
                         keywords={work.stack}
                 >
-                    <Container>
+                    <Container maxW={'2xl'}>
                         <Title>
                             {work.title && work.title}{' - '} ({work.type})
                         </Title>
@@ -126,7 +135,16 @@ const Work = () => {
                     </ListItem>
                     }
                     </List>
-                        <SliderComponent cards={work.imgs}/>
+                        { work.video && 
+                            <div className="">
+                                <YouTube videoId="oxhSJZu-jFI" 
+                                opts={opts} onReady={_onReady} />
+                            </div>
+                        } 
+                        { 
+                            work.imgs && work.video && <Divider my={4}/>
+                        }
+                        { work.imgs && <SliderComponent cards={work.imgs} />}
                     </Container>
                 </Layout>
             </>

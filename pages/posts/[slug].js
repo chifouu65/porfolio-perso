@@ -46,14 +46,14 @@ const Posts = () => {
     } else if (error) {
         return <>
             <Layout title="Post not found">
-                <Container>
+                <Container maxW={'2xl'}>
                     <Title>
                         Post not found
                     </Title>
                     The post you are looking for does not exist.
                 </Container>
                 <Divider my={4}/>
-                <Container>
+                <Container maxW={'2xl'}>
                     <Button
                         colorScheme={useColorModeValue('purple', 'orange')}
                         onClick={() => router.back()}
@@ -67,7 +67,7 @@ const Posts = () => {
         return (
             <>
                 <Layout title={post.title} description={post.description} keywords={post.tags}>
-                <Container maxW={'7xl'} p="12">
+                <Container maxW={'4xl'} p="12">
                     <Wrap spacing="30px">
                         <WrapItem w="100%">
                         <Box w="100%">
