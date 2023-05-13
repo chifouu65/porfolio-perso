@@ -43,22 +43,19 @@ const works = [
         id: 'messenger-clone',
         title: 'Messenger Clone',
         link: 'https://github.com/chifouu65/messenger-clone-nextjs',
-        description: `Développement d'un clone de Messenger avec React, NextJs, TailwindCSS, Next-Auth, Prisma, toastify, zustand, pusherJs, framer-motion, react-icons, react-hook-form, react-select, axios, bcrypt, clsx, date-fns, lodash, prisma, cloudinary, pusher, next-superjson et next-cloudinary.\n
+        description: `Développement d'un clone de Messenger. (fonctionnalités : (connexion, inscription, chat en temps réel, upload d'images temps réel, responsive design, modification des états des messages, suppression des messages, suppression des conversations, deconnexion) \n
         - Authentification avec Next-Auth et OAuth.\n
         - Base de données avec Prisma et MongoDB.\n
         - Upload d'images avec Cloudinary.\n
-        - Chat en temps réel avec PusherJs.\n
+        - Chat / Conversation en temps réel avec PusherJs.\n
         - Déploiement avec Vercel.\n
         - Responsive design.\n
         - SEO avec NextJs.\n
         - PWA avec NextJs.\n
-        - Dark mode avec TailwindCSS.\n
         - Animations avec Framer Motion.\n
         - Gestion d'état avec Zustand.\n
         - Gestion des formulaires avec React Hook Form.\n
         - Gestion des classes avec Clsx.\n
-        - Gestion des websockets avec Pusher.\n
-        - Gestion des données avec Prisma.\n
         - Gestion des images avec Cloudinary.`,
         year: '2023',
         thumbnail: home_D,
