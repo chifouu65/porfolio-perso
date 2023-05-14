@@ -20,9 +20,8 @@ const Posts = () => {
                     <SimpleGrid columns={[1]} gap={6}>
                     {
                             posts.map((post, index) => (
-                                <Box
+                                <Link
                                 key={index}
-                                as={Link}
                                 color={useColorModeValue('gray.700', 'gray.200')}
                                 _hover={{ textDecoration: 'none' }}
                                 href={`/posts/${post.id}`}
@@ -41,16 +40,13 @@ const Posts = () => {
                                     zIndex="2"
                                     marginLeft={{ base: '0', sm: '5%' }}
                                     marginTop="5%">
-                                    <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                                       <Image
                                         borderRadius="lg"
                                         src={
                                          post.images[0].src
                                         }
                                         alt="some good alt text"
-                                        objectFit="contain"
                                       />
-                                    </Link>
                                   </Box>
                                   <Box zIndex="1" width="100%" position="absolute" height="100%">
                                     <Box
@@ -78,7 +74,7 @@ const Posts = () => {
                                     </Link>
                                   </Heading>
                                 </Box>
-                              </Box>
+                              </Link>
                             ))
                         }
                     </SimpleGrid>

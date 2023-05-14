@@ -23,28 +23,20 @@ const keywords = [
     'Développeur Frontend',
 ]
 
-const Works = () => (
+const Projects = () => (
     <Layout
         keywords={keywords}
         title="Projects & Réalisations" description={"Mes projets et réalisations, plus sur github."}>
         <Container maxW={'2xl'}>
-            <Heading as="h3" fontSize={20} mb={4}>
-                Works
+            <Heading as="h3" fontSize={20} mb={6}>
+                Projects & Réalisations
             </Heading>
 
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SimpleGrid columns={[1, 1, 2]} gap={4}>
                 {
                     works.map((work, index) => (
                         <Section key={index}>
-                            <WorkGridItem id={work.id} title={work.title} thumbnail={work.thumbnail}>
-                                {
-                                    work.description.length > 50 ? (
-                                        <span>{work.description.slice(0, 50)}...</span>
-                                    ) : (
-                                        <span>{work.description}</span>
-                                    )
-                                }
-                            </WorkGridItem>
+                            <WorkGridItem id={work.id} type={work.type} title={work.title} thumbnail={work.thumbnail}/>
                         </Section>
                     ))
                 }
@@ -53,5 +45,5 @@ const Works = () => (
     </Layout>
 )
 
-export default Works
+export default Projects
 export {getServerSideProps} from '../components/chakra'

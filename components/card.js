@@ -42,8 +42,9 @@ export default function Card({image, title, subTitle, children, tags}) {
                             <Badge key={index}
                                 px={2}
                                 py={1}
-                                bg={useColorModeValue('gray.50', 'gray.800')}
-                                fontWeight={'400'}>
+                                colorScheme={useColorModeValue('purple', 'orange')}
+                                fontWeight={'400'}
+                            >
                                 #{tag}
                             </Badge>
                         ))

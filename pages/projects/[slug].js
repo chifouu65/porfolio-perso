@@ -18,7 +18,7 @@ import Layout from '../../components/layouts/article'
 import SliderComponent from "../../components/slider";
 import YouTube from "react-youtube";
 
-const Work = () => {
+const Projects = () => {
     const router = useRouter()
     const {slug} = router.query
     const [work, setWork] = useState(null)
@@ -27,9 +27,7 @@ const Work = () => {
     const opts = {
         maxWidth: '640',
         width: '100%',
-        playerVars: {
-          autoplay: 1,
-        },
+        
     };
     function _onReady(event) {
         event.target.pauseVideo();
@@ -114,7 +112,7 @@ const Work = () => {
                                 </ListItem>
                             }
                             <ListItem>
-                                <Meta>Mission</Meta>
+                                <Meta>Type</Meta>
                                 <span>{work.type}</span>
                             </ListItem>
                             {
@@ -152,6 +150,6 @@ const Work = () => {
     }
 }
 
-export default Work
+export default Projects
 export {getServerSideProps} from '../../components/chakra'
   

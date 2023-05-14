@@ -43,7 +43,8 @@ const works = [
         id: 'messenger-clone',
         title: 'Messenger Clone',
         link: 'https://github.com/chifouu65/messenger-clone-nextjs',
-        description: `Développement d'un clone de Messenger. (fonctionnalités : (connexion, inscription, chat en temps réel, upload d'images temps réel, responsive design, modification des états des messages, suppression des messages, suppression des conversations, deconnexion) \n
+        description: `Développement d'un clone de Messenger. \n
+        (fonctionnalités : (connexion, inscription, chat en temps réel, upload d'images temps réel, responsive design, modification des états des messages, suppression des messages, suppression des conversations, deconnexion) \n
         - Authentification avec Next-Auth et OAuth.\n
         - Base de données avec Prisma et MongoDB.\n
         - Upload d'images avec Cloudinary.\n
@@ -56,7 +57,7 @@ const works = [
         - Gestion d'état avec Zustand.\n
         - Gestion des formulaires avec React Hook Form.\n
         - Gestion des classes avec Clsx.\n
-        - Gestion des images avec Cloudinary.`,
+        - Gestion des images avec Cloudinary.\n`,
         year: '2023',
         thumbnail: home_D,
         imgs: [home_D, home_P, login_D, login_P, chat_D, chat_P],
