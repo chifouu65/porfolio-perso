@@ -38,7 +38,45 @@ import home_P from '../public/images/works/messenger/home_P.png'
 import login_D from '../public/images/works/messenger/login_D.png'
 import login_P from '../public/images/works/messenger/login_P.png'
 
+import home_pr_v2 from '../public/images/works/v2_pr/homepage.png'
 const works = [
+    {
+      id: "v2_pierrette_essentielle",
+        title: "Pierrette Essentielle (v2)",
+        link: "https://shop.pierrette-essentielle.fr/",
+        description: `Développement d'une boutique en ligne pour la marque Pierrette Essentielle. \n
+        Nouvelle version du site avec NextJs 13, refonte du design, ajout de nouvelles fonctionnalités, amélioration du SEO, amélioration des performances, amélioration de l'accessibilité, amélioration de la PWA, amélioration de l'expérience utilisateur, amélioration de l'expérience développeur. \n
+        (Version non définitive, en cours de développement) \n
+        - Style avec TailwindCSS.\n
+        - Authentification Non.\n
+        - Base de données avec MongoDB.\n
+        - Seo avec NextJs.\n
+        - PWA avec NextJs.\n
+        - Animations avec Framer Motion. Non fini\n
+        - Gestion d'état avec Redux Toolkit.\n
+        - Gestion des requêtes avec Axios.\n
+        - Gestion des cookies.Non Fini.\n
+        - Gestion des routes avec NextJs.\n
+        - Gestion des icones avec react-icons.\n
+        - Gestion des notifications avec react-toastify.\n
+        
+        https://github.com/chifouu65/v2_pierrette_essentielle_e-commerce
+        `,
+        year: "2023",
+        thumbnail: home_pr_v2,
+        imgs: [
+            home_pr_v2,
+        ],
+        stack: [
+            "React",
+            "NextJS",
+            "TailwindCSS",
+            "Redux Toolkit",
+            "Axios",
+            "react-icons",
+            "react-toastify",
+        ],
+    },
     {
         id: 'messenger-clone',
         title: 'Messenger Clone',
