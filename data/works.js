@@ -43,7 +43,7 @@ const works = [
     {
       id: "v2_pierrette_essentielle",
         title: "Pierrette Essentielle (v2)",
-        link: "https://shop.pierrette-essentielle.fr/",
+        link: "http://shop.pierrette-essentielle.fr/",
         description: `Développement d'une boutique en ligne pour la marque Pierrette Essentielle. \n
         Nouvelle version du site avec NextJs 13, refonte du design, ajout de nouvelles fonctionnalités, amélioration du SEO, amélioration des performances, amélioration de l'accessibilité, amélioration de la PWA, amélioration de l'expérience utilisateur, amélioration de l'expérience développeur. \n
         (Version non définitive, en cours de développement) \n
